@@ -15,7 +15,10 @@ while !game.game_over?
   current_question.ask_question(game.current_player)
 
   game.switch_player
+
+  puts "#{player1.name}: #{player1.lives}/3 vs #{player2.name}: #{player2.lives}/3"
 end
+
 
 # Determine winner and display result
 winner = game.winner
